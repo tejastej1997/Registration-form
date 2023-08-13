@@ -1,22 +1,20 @@
-*
-{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
-body
-{
-    
+
+body {
+
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    background-image: linear-gradient(to right,#3498db,#9b59b6);
+    background-image: linear-gradient(to right, #3498db, #9b59b6);
 }
-.container
-{
+
+.container {
     max-width: 650px;
     background-color: white;
     border-radius: 5px;
@@ -24,75 +22,90 @@ body
     box-shadow: 0 15px 20px #abb2b9;
     margin: 0 20px;
 }
-h1
-{
+
+h1 {
     font-size: 25px;
     margin-bottom: 20px;
     color: #9b59b6;
 }
-form
-{
+
+form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
 }
-.input-field
-{
+
+
+.input-field {
     display: flex;
     flex-wrap: wrap;
     width: 50%;
     padding-bottom: 15px;
 }
-.input-field:nth-child(2n)
-{
+
+.input-field:nth-child(2n) {
     justify-content: end;
 }
-.input-field label
-{
+
+.input-field label {
     width: 95%;
     margin: 5px 0;
-    
+
 }
-.input-field input{
+
+.input-field input {
     width: 95%;
     padding: 0 10px;
     height: 40px;
     outline: none;
     border-radius: 5px;
-  border: 1px solid #ccc;
+    border: 1px solid #ccc;
 }
 
-.genderdetails
-{
-   
-   color: grey;
+.genderdetails {
+
+    color: grey;
     display: flex;
     justify-content: space-between;
 }
-.genderdetails label
-{
+
+.genderdetails label {
     padding: 0 20px 0 5px;
     font-size: 15px;
 }
-.genderdetails label,.genderdetails input
-{
+
+.genderdetails label,
+.genderdetails input {
     cursor: pointer;
     margin-top: 10px;
 }
-button
-{
+
+button {
     width: 100%;
     padding: 10px;
     margin-top: 20px;
     font-size: 15px;
     color: white;
     font-weight: 600;
-    background-image: linear-gradient(to right,#3498db,#9b59b6);
+    background-image: linear-gradient(to right, #3498db, #9b59b6);
     border: none;
     border-radius: 5px;
 }
-button:hover
-{
-    background-image: linear-gradient(to right,#9b59b6,#3498db);
+
+button:hover {
+    background-image: linear-gradient(to right, #9b59b6, #3498db);
+}
+
+@media screen and (max-width : 767px) {
+    form {
+        flex-direction: column;
+    }
+
+    .input-field:nth-child(2n) {
+        justify-content: flex-start;
+    }
+    .input-field {
+        width: 100%;
+        
+    }
 }
